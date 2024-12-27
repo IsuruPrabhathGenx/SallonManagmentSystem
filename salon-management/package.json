@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@firebase/auth": "^1.8.1",
+    "@firebase/firestore": "^4.7.5",
     "@heroicons/react": "^2.2.0",
     "firebase": "^11.1.0",
     "moment": "^2.30.1",
