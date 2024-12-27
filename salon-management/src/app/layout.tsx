@@ -1,6 +1,8 @@
-// app/layout.tsx
+// src/app/layout.tsx
+'use client';
+
+import { AuthProvider } from '@/context/AuthContext';
 import './globals.css';
-import AuthProvider from '@/components/providers/AuthProvider';
 
 export default function RootLayout({
   children,
