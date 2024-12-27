@@ -1,3 +1,4 @@
+// app/hooks/useAuth.ts
 import { useState, useEffect } from 'react';
 import { 
   signInWithEmailAndPassword,
