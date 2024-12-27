@@ -28,12 +28,12 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-gray-50 to-blue-50">
       <div className="max-w-md w-full mx-4">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-8 space-y-8">
           <div className="text-center space-y-2">
-            <h1 className="text-4xl font-bold text-white">Welcome Back</h1>
-            <p className="text-gray-400">Enter your credentials to access your account</p>
+          <h1 className="text-4xl font-bold text-gray-800">Welcome Back</h1>
+          <p className="text-gray-600">Enter your credentials to access your account</p>
           </div>
 
           {error && (
@@ -53,7 +53,7 @@ export default function LoginForm() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white/5 border border-gray-700 rounded-lg py-3 px-12 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white border border-gray-200 rounded-lg py-3 px-12 text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your email"
                   required
                 />
@@ -61,7 +61,7 @@ export default function LoginForm() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium text-gray-300">
+              <label className="text-sm font-medium text-gray-600">
                 Password
               </label>
               <div className="relative">
@@ -70,7 +70,7 @@ export default function LoginForm() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-white/5 border border-gray-700 rounded-lg py-3 px-12 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full bg-white border border-gray-200 rounded-lg py-3 px-12 text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your password"
                   required
                 />
