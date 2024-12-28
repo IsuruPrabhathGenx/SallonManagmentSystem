@@ -1,3 +1,5 @@
+// src/components/LoginForm.tsx
+
 import { useState } from 'react';
 import { signInWithEmailAndPassword, AuthError } from 'firebase/auth';
 import { auth } from '@/lib/firebase';

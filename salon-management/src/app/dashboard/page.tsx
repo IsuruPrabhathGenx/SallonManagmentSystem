@@ -6,17 +6,19 @@ import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { Users, Calendar, DollarSign, TrendingUp } from 'lucide-react';
+import LoadingScreen from '@/components/LoadingScreen';
 
 export default function Dashboard() {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
-    if (!user) {
+    if (!loading && !user) {
       router.push('/');
     }
-  }, [user, router]);
+  }, [user, loading, router]);
 
+  if (loading) return <LoadingScreen />;
   if (!user) return null;
 
   const stats = [
