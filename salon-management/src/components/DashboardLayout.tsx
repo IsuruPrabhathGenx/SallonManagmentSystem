@@ -5,7 +5,7 @@ import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import Link from 'next/link';
 import { useState } from 'react';
-import { LayoutDashboard, Calendar, Users, Scissors, LogOut, Menu, Bell, Package, ChevronDown, UserCircle2, X } from 'lucide-react';
+import { LayoutDashboard, Calendar, Users, Scissors, LogOut, Menu, Bell, Heart, Package, Tag , ChevronDown, UserCircle2, X } from 'lucide-react';
 
 export default function DashboardLayout({
   children,
@@ -23,6 +23,9 @@ export default function DashboardLayout({
     { href: '/dashboard/employees', label: 'Employees', icon: UserCircle2 },
     { href: '/dashboard/services', label: 'Services', icon: Scissors },
     { href: '/dashboard/inventory', label: 'Inventory', icon: Package },
+    { href: '/dashboard/bridals', label: 'Bridals', icon: Heart },
+    { href: '/dashboard/packages', label: 'Packages', icon: Tag  },
+    
   ];
 
   return (
